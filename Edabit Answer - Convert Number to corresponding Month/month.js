@@ -21,4 +21,4 @@
 // month_name(6) ➞ "June"
 
 let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-const month_name = num => month[num.toLocaleString() -1];
+const month_name = num => month[(num - 1).toLocaleString()];
