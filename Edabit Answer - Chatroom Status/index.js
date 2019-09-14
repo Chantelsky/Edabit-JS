@@ -18,20 +18,11 @@
 
 const chatroomStatus = users => {
     switch (users.length) {
-     case 0:
-       return "no one online"
-       break;
-     case 1:
-       return `${users[0]} online`
-       break;
-      case 2:
-        return `${users[0]} and ${users[1]} online`
-        break;
-      case 3:
-        return `${users[0]}, ${users[1]} and 1 more online`
-        break;
-      default:
-        return `${users[0]}, ${users[1]} and ${users.length - 2} more online`
+     case 0: return "no one online"
+     case 1: return `${users[0]} online`
+      case 2: return `${users[0]} and ${users[1]} online`
+      case 3: return `${users[0]}, ${users[1]} and 1 more online`
+      default: return `${users[0]}, ${users[1]} and ${users.length - 2} more online`
        } 
    }
    
